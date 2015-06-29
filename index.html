@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="home">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico?v=3" />
+    <script>
+        var isDev =
+            document.location.hostname.indexOf("localhost") >= 0 ||
+            document.location.hostname.indexOf("127.0.0.1") >= 0 ||
+            document.location.pathname.indexOf("staging") >= 0;
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        if (!isDev) {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-61122030-3', 'auto');
+            ga('send', 'pageview');
+        }
+    </script>
+
+    <!-- Facebook Tracking -->
+    <script>
+        (function () {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+            _fbq.push(['addPixelId', '1414544362193388']);
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1414544362193388&amp;ev=PixelInitialized" />
+    </noscript>
+
+
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- /build -->
+</head>
+
+<body style='display:none'>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+    <!-- Add your site or application content here -->
+    <div class='fluid-container' id='main-container'>
+        <section id='header1'>
+            <img class='img-responsive' data-i18n='[src]header.img-header' src='images/header.jpg'>
+        </section>
+        <section id='points'>
+            <div class=''>
+                <ul>
+                    <li data-i18n='point.oneyear'>1 Year GRR (worth RM 54,800)*</li>
+                    <li data-i18n='point.withprop'>With Property &amp; Leasing Management*</li>
+                    <li data-i18n='point.withready'>With Ready Tenants</li>
+                    <li data-i18n='point.hassle'>Hassle Free Investment</li>
+                    <li data-i18n='point.sqft'>1,715 sq.ft.</li>
+                    <li data-i18n='point.airconditioner'>Fully furnished with air conditioners*, refrigerator &amp; washing machine</li>
+                    <li data-i18n='point.onecarpark'>1 car park</li>
+                    <li data-i18n='point.mmu'>Walking Distance to MMU(opposite)</li>
+                </ul>
+                <small data-i18n='point.terms'>*Terms &amp; Conditions Apply</small>
+            </div>
+        </section>
+        <section>
+            <img class='img-responsive' src='images/header2.jpg'>
+        </section>
+        <section>
+            <div id='googlemap' class='responsive-container'>
+                <canvas width='300' height='160'></canvas>
+                <div class='responsive-content'>
+                    <iframe id='map' width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZU6hYAxURw1ewJYV4OMLitTYd01xPb0I&q=2.921969,101.6416897&zoom=15">
+                    </iframe>
+                </div>
+                <!--                2.921969,101.6416897,16z/data=!4m2!3m1!1s0x31cdb6e390f1268f:0x186e4d411c79dfe9-->
+            </div>
+        </section>
+        <section>
+            <form class='form-horizontal' action='resources/contact.php' method='post' id='form'>
+                <div class='please-register'><strong data-i18n='form.fillin'>Kindly fill in your particulars for priority attention:</strong>
+                </div>
+                <fieldset>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="register-name"><strong data-i18n='form.name'>Name*</strong>
+                        </label>
+                        <div class="col-md-8">
+                            <input id="register-name" name="register-name" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="register-contact"><strong data-i18n='form.contact'>Contact*</strong>
+                        </label>
+                        <div class="col-md-8">
+                            <input type='tel' id="register-contact" name="register-contact" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="register-1-email"><strong data-i18n='form.email'>Email*</strong>
+                        </label>
+                        <div class="col-md-8">
+                            <input type='email' id="register-email" name="register-email" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+
+
+                    <!-- Agreement -->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="checkbox-inline" for="register-agree">
+                                <input type="checkbox" name="register-agree" id="register-agree" value="yes"><small id='iagreecopy' data-i18n='form.iagree'> I agree to receive information in any form from Blue Octopus Marketing Sdn. Bhd.*</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type='submit' name="submit" class="btn btn-default">
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+        <section id='footer'>
+            <span data-i18n='footer.moreinfo'>For More Information, Please Call</span> <a href='tel:0123886389'>012-388 6389</a>
+        </section>
+    </div>
+
+    <!-- build:js js/main.js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/bower_components/jquery/dist/jquery.min.js"><\/script>')
+    </script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-waitingfor.js"></script>
+    <script src="bower_components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script>
+    <script src="bower_components/bootbox/bootbox.js"></script>
+    <script src="bower_components/sprintf/dist/sprintf.min.js"></script>
+    <script src="bower_components/i18next/i18next.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- /build -->
+    </script>
+</body>
+
+</html>

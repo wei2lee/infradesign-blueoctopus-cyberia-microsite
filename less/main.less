@@ -1,0 +1,419 @@
+// out: ../css/main.css, compress:false, strictMath:false
+@bower_component_path: "../bower_components/";
+// Core variables and mixins
+@import "variables.less";
+@import "@{bower_component_path}/bootstrap/less/mixins.less";
+// Reset and dependencies
+@import "@{bower_component_path}/bootstrap/less/normalize.less";
+@import "@{bower_component_path}/bootstrap/less/print.less";
+@import "@{bower_component_path}/bootstrap/less/glyphicons.less";
+// Core CSS
+@import "@{bower_component_path}/bootstrap/less/scaffolding.less";
+@import "@{bower_component_path}/bootstrap/less/type.less";
+@import "@{bower_component_path}/bootstrap/less/code.less";
+@import "@{bower_component_path}/bootstrap/less/grid.less";
+@import "@{bower_component_path}/bootstrap/less/tables.less";
+@import "@{bower_component_path}/bootstrap/less/forms.less";
+@import "@{bower_component_path}/bootstrap/less/buttons.less";
+// Components
+@import "@{bower_component_path}/bootstrap/less/component-animations.less";
+@import "@{bower_component_path}/bootstrap/less/dropdowns.less";
+@import "@{bower_component_path}/bootstrap/less/button-groups.less";
+@import "@{bower_component_path}/bootstrap/less/input-groups.less";
+@import "@{bower_component_path}/bootstrap/less/navs.less";
+@import "@{bower_component_path}/bootstrap/less/navbar.less";
+@import "@{bower_component_path}/bootstrap/less/breadcrumbs.less";
+@import "@{bower_component_path}/bootstrap/less/pagination.less";
+@import "@{bower_component_path}/bootstrap/less/pager.less";
+@import "@{bower_component_path}/bootstrap/less/labels.less";
+@import "@{bower_component_path}/bootstrap/less/badges.less";
+@import "@{bower_component_path}/bootstrap/less/jumbotron.less";
+@import "@{bower_component_path}/bootstrap/less/thumbnails.less";
+@import "@{bower_component_path}/bootstrap/less/alerts.less";
+@import "@{bower_component_path}/bootstrap/less/progress-bars.less";
+@import "@{bower_component_path}/bootstrap/less/media.less";
+@import "@{bower_component_path}/bootstrap/less/list-group.less";
+@import "@{bower_component_path}/bootstrap/less/panels.less";
+@import "@{bower_component_path}/bootstrap/less/responsive-embed.less";
+@import "@{bower_component_path}/bootstrap/less/wells.less";
+@import "@{bower_component_path}/bootstrap/less/close.less";
+// Components w/ JavaScript
+@import "@{bower_component_path}/bootstrap/less/modals.less";
+@import "@{bower_component_path}/bootstrap/less/tooltip.less";
+@import "@{bower_component_path}/bootstrap/less/popovers.less";
+@import "@{bower_component_path}/bootstrap/less/carousel.less";
+// Utility classes
+@import "@{bower_component_path}/bootstrap/less/utilities.less";
+@import "@{bower_component_path}/bootstrap/less/responsive-utilities.less";
+@import "@{bower_component_path}/fontawesome/less/variables.less";
+@fa-font-path: "@{bower_component_path}/fontawesome/fonts";
+@import "@{bower_component_path}/fontawesome/less/mixins.less";
+@import "@{bower_component_path}/fontawesome/less/path.less";
+@import "@{bower_component_path}/fontawesome/less/core.less";
+@import "@{bower_component_path}/fontawesome/less/larger.less";
+@import "@{bower_component_path}/fontawesome/less/fixed-width.less";
+@import "@{bower_component_path}/fontawesome/less/list.less";
+@import "@{bower_component_path}/fontawesome/less/bordered-pulled.less";
+@import "@{bower_component_path}/fontawesome/less/animated.less";
+@import "@{bower_component_path}/fontawesome/less/rotated-flipped.less";
+@import "@{bower_component_path}/fontawesome/less/stacked.less";
+@import "@{bower_component_path}/fontawesome/less/icons.less";
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+@color-dark-blue: #064c83;
+@color-brand: @color-dark-blue;
+/* ==========================================================================
+   Helper
+   ========================================================================== */
+/* m(edia) s(creen) mi(n) w(idth) */
+
+//.msmiw(@minwidth,
+//@prop,
+//@val) {
+//    @media screen and(min-width: @minwidth) {
+//        @ {
+//            prop
+//        }
+//        :@val;
+//    }
+//}
+//For editing only
+//* { transition:all 0.3s; }
+/* ==========================================================================
+   Main Layout
+   ========================================================================== */
+
+//background: color image position/size repeat origin clip attachment initial|inherit;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {}
+
+.row.container-height {
+    overflow: hidden;
+}
+
+.row.container-height > [class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.vertical-center-container {
+    position: relative;
+}
+
+.vertical-center-content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+strong {}
+
+small {}
+
+.nowrap {
+    display: inline-block;
+}
+
+.responsive-container {
+    position: relative;
+    >canvas:first-child {
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    >.responsive-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    /* width and height can be anything, as long as they're equal */
+}
+/* scroll fixes */
+
+.modal-open .modal {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow-y: scroll;
+}
+
+ul.inline-list {
+    li {
+        float: left;
+        &:not(: last-child):after {}
+    }
+}
+
+footer {
+    .text-center;
+    .socials {
+        display: inline-block;
+        .clearfix;
+        li {
+            float: left;
+            img {
+                height: auto;
+            }
+        }
+        li:not(:last-child) {}
+    }
+    .socials {
+        .clearfix;
+        li {
+            img {
+                width: 80%;
+            }
+            font-size:1.7em;
+        }
+        li:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+    .copyright {
+        .text-center;
+    }
+    .docs {
+        display: inline-block;
+        a {
+            font-size: 0.95em;
+            line-height: 1.8em;
+        }
+    }
+}
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+    color: @brand-danger;
+}
+
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
+    color: @brand-success;
+}
+
+.has-error .form-control-feedback {
+    color: @brand-danger;
+}
+
+.has-success .form-control-feedback {
+    color: @brand-success;
+}
+
+.form-horizontal .has-feedback [for="register-agree"] .form-control-feedback {
+    right: 0px;
+}
+/* ==========================================================================
+   Page Layout
+   ========================================================================== */
+
+#main-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#header1 {
+    margin-top: @padding-xxlg-vertical * 2;
+    @media screen and(min-width: @screen-xmd-min) {
+        margin-top: @padding-xxlg-vertical * 4;
+    }
+}
+
+#points {
+    padding: @padding-large-vertical;
+    @media screen and(min-width: @screen-xmd-min) {
+        padding: @padding-xlg-vertical;
+    }
+    ul {
+        display: block;
+        width: 100%;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        @media screen and(min-width: @screen-xmd-min) {
+            font-size: 1.5em;
+            line-height: 1.8em;
+        }
+        li {
+            list-style: none;
+        }
+        li:before {
+            content: '';
+            display: inline-block;
+            height: 11px;
+            width: 13px;
+            @media screen and(min-width: @screen-xmd-min) {
+                height: 15px;
+                width: 18px;
+            }
+            background-size:contain;
+            background-image: url(../images/list-style.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+#header2 {
+    margin-bottom: @padding-xlg-vertical;
+}
+
+.form-horizontal {
+    font-size: 1.1em;
+    .please-register {
+        margin-bottom: @padding-xlg-vertical;
+        @media screen and(min-width: @screen-xmd-min) {
+            margin-bottom: @padding-xlg-vertical;
+        }
+    }
+    padding: @padding-large-vertical;
+    @media screen and(min-width: @screen-xmd-min) {
+        padding: @padding-xlg-vertical;
+    }
+    .control-label {
+        @media screen and(min-width: @screen-sm-min) {
+            text-align: left;
+        }
+    }
+    #iagreecopy {
+        display: inline-block;
+        padding-right: 40px;
+    }
+    [name=submit] {
+        border-radius: 0;
+        border: none;
+        background-color: #A7A9AB;
+        color: white;
+        font-size: 0.8em;
+        @media screen and(min-width: @screen-xmd-min) {
+            font-size: 1.2em;
+        }
+    }
+}
+
+#googlemap {
+    canvas {
+        height: 300px;
+        @media screen and(min-width: @screen-xmd-min) {
+            height: 400px;
+        }
+        @media screen and(min-width: @screen-sm-min) {
+            height: 400px;
+        }
+    }
+}
+
+#footer {
+    a {
+        display: inline-block;
+        font-size: 1.5em;
+        color: black;
+    }
+    padding: 0 @padding-large-vertical @padding-large-vertical @padding-large-vertical;
+    font-size: 0.8em;
+    @media screen and(min-width: @screen-xxs-min) {
+        padding: 0 @padding-large-vertical @padding-large-vertical @padding-large-vertical;
+        font-size: 1em;
+    }
+    @media screen and(min-width: @screen-xmd-min) {
+        padding: 0 @padding-xlg-vertical @padding-xlg-vertical @padding-xlg-vertical;
+        font-size: 1.2em;
+    }
+}
+/* ==========================================================================
+   Thank You
+   ========================================================================== */
+
+#thankyou {
+    height: 100%;
+    >.container {
+        max-width: 600px;
+        height: 100%;
+        .logo {
+            margin: 0 auto;
+            width: 60%;
+            margin-bottom: 1em;
+        }
+        .success-submit {
+            .text-center;
+            color: @color-brand;
+            font-size: 1.4em;
+            line-height: 1.3em;
+            @media screen and(min-width: 480px) {
+                font-size: 2em;
+                line-height: 1.4em;
+            }
+            @media screen and(min-width: 600px) {
+                font-size: 2em;
+                line-height: 1.4em;
+            }
+        }
+        a {
+            color: @color-brand;
+            font-size: 1.4em;
+            line-height: 1.3em;
+            @media screen and(min-width: 480px) {
+                font-size: 2em;
+                line-height: 1.4em;
+            }
+            @media screen and(min-width: 600px) {
+                font-size: 2em;
+                line-height: 1.4em;
+            }
+        }
+        .back-block {
+            .text-center;
+        }
+    }
+}

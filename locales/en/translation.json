@@ -1,0 +1,27 @@
+{
+    "header": {
+        "img-header": "images/header.jpg"
+    },
+    "point": {
+        "oneyear": "1 Year GRR (worth RM 54,000)*",
+        "withprop": "With Property & Leasing Management*",
+        "withready": "With Ready Tenants",
+        "hassle": "Hassle Free Investment",
+        "sqft": "1,715 sq.ft.",
+        "airconditioner": "Fully furnished with air conditioners*, refrigerator & washing machine",
+        "onecarpark": "1 car park",
+        "mmu": "Walking Distance to MMU(opposite)",
+        "terms": "*Terms & Conditions Apply"
+    },
+    "form": {
+        "fillin": "Kindly fill in your particulars for priority attention:",
+        "name": "Name*",
+        "contact": "Contact*",
+        "email": "Email*",
+        "iagree": "I agree to receive information in any form from Blue Octopus Marketing Sdn. Bhd.*"
+    },
+    "footer": {
+        "moreinfo": "For More Information, Please Call"
+    }
+
+}

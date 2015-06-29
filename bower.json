@@ -1,0 +1,29 @@
+{
+  "name": "template",
+  "version": "0.0.0",
+  "authors": [
+    "wei2lee <wei2lee86@gmail.com>"
+  ],
+  "description": "template",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "angular-bootstrap": "~0.12.1",
+    "bootbox": "~4.4.0",
+    "form.validation": "*",
+    "darkroomjs": "*",
+    "fontawesome": "~4.3.0",
+    "sprintf": "~1.0.2",
+    "greensock": "~1.16.1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "header": {
+        "img-header": "images/zh/header.jpg"
+    },
+    "point": {
+        "oneyear": "1年保证租金回酬(总值RM54,000)*",
+        "withprop": "提供产业及租凭管理服务*",
+        "withready": "已有确定租户",
+        "hassle": "高枕无忧的投资",
+        "sqft": "1,715平方尺",
+        "airconditioner": "全装修，备有冷气机*，冰箱及洗衣机",
+        "onecarpark": "一个泊车位",
+        "mmu": "步行距离至多媒体大学（MMU）",
+        "terms": "*必需符合条件"
+    },
+    "form": {
+        "fillin": "请填上你的资料好让我们随时提供资讯：",
+        "name": "名字*",
+        "contact": "联系*",
+        "email": "电邮*",
+        "iagree": "我同意接收任何形式的信息从Blue Octopus Marketing Sdn. Bhd.*"
+    },
+    "footer": {
+        "moreinfo": "预知更多详情，请拨打"
+    }
+
+}
